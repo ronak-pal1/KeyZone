@@ -6,6 +6,7 @@ const Key = ({
   innerWidth = "70%",
   isPressed = false,
   pressScale = "80%",
+  isTextCentered = false,
 }: {
   text: string;
   lowerColor?: string;
@@ -14,6 +15,7 @@ const Key = ({
   innerWidth?: string;
   isPressed?: boolean;
   pressScale?: string;
+  isTextCentered?:boolean;
 }) => {
   return (
     <div
@@ -23,10 +25,10 @@ const Key = ({
       style={{ width }}
     >
       <div
-        className={`h-[70%] drop-shadow-neutral-200 ${upperColor} drop-shadow-sm  rounded-sm`}
+        className={`h-[70%] drop-shadow-neutral-200 ${upperColor} drop-shadow-sm  rounded-sm ${isTextCentered && "flex items-center justify-center"}`}
         style={{ width: innerWidth }}
       >
-        <p className="mt-1 ml-1.5 text-neutral-600 text-[12px] font-semibold">
+        <p className={`${!isTextCentered && "mt-1 ml-1.5"}  text-neutral-600 text-[12px] font-semibold`}>
           {text}
         </p>
       </div>

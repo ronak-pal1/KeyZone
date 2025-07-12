@@ -170,7 +170,7 @@ const Keyboard = () => {
             upperColor="bg-gray-400"
             width="100px"
           />
-          <Key text="↑" lowerColor="bg-gray-500" upperColor="bg-gray-400" />
+          <Key text="↑" lowerColor="bg-gray-500" upperColor="bg-gray-400" isTextCentered={true} />
           <Key text="PgDn" lowerColor="bg-gray-500" upperColor="bg-gray-400" />
         </div>
         <div className="flex items-center space-x-2.5">
@@ -179,20 +179,21 @@ const Keyboard = () => {
           <Key text="Alt" lowerColor="bg-gray-500" upperColor="bg-gray-400" />
           <Key
             isPressed={currentKey === " "}
-            text=""
+            text="<______________________>"
             lowerColor="bg-orange-600"
             upperColor="bg-orange-500 drop-shadow-orange-700"
             width="440px"
             innerWidth="95%"
             pressScale="90%"
+            isTextCentered={true}
           />
 
           <Key text="Alt" lowerColor="bg-gray-500" upperColor="bg-gray-400" />
           <Key text="Fn" lowerColor="bg-gray-500" upperColor="bg-gray-400" />
           <Key text="Ctrl" lowerColor="bg-gray-500" upperColor="bg-gray-400" />
-          <Key text="←" lowerColor="bg-gray-500" upperColor="bg-gray-400" />
-          <Key text="↓" lowerColor="bg-gray-500" upperColor="bg-gray-400" />
-          <Key text="→" lowerColor="bg-gray-500" upperColor="bg-gray-400" />
+          <Key text="←" lowerColor="bg-gray-500" upperColor="bg-gray-400" isTextCentered={true} />
+          <Key text="↓" lowerColor="bg-gray-500" upperColor="bg-gray-400" isTextCentered={true}/>
+          <Key text="→" lowerColor="bg-gray-500" upperColor="bg-gray-400" isTextCentered={true}/>
         </div>
       </div>
       <PreviewScreen currentKey={currentKey} />
