@@ -715,5 +715,5 @@ export const getWords = () => {
         str += words[Math.floor(Math.random()*WORD_LEN)] + " "
 
 
-    return str;
+    return str.trim();
 };
