@@ -7,7 +7,7 @@ const Home = () => {
 
 
     return (
-        <div className="flex flex-col items-center justify-end h-screen pb-10 relative">
+        <div className="flex flex-col items-center justify-between h-screen pb-10 relative">
             <WordsScreen />
             <Keyboard />
         </div>

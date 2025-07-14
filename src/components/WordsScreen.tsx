@@ -88,9 +88,9 @@ const WordsScreen = () => {
   }, [keyIndex]);
 
   return (
-    <>
+    <div className="mt-24">
       <StatisticsSection accuracy={accuracy} speed={speed} />
-      <div className="w-[1000px] mb-16 text-center">
+      <div className="w-[1000px] text-center">
         <input
           className="absolute opacity-0 z-0 left-0 top-0"
           type="text"
@@ -105,7 +105,7 @@ const WordsScreen = () => {
           {str}
         </p>
       </div>
-    </>
+    </div>
   );
 };
 
