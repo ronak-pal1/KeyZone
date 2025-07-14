@@ -20,9 +20,9 @@ const Key = ({
   return (
     <div
       className={` transition ${
-        isPressed ? `scale-[${pressScale}] brightness-95 ` : "scale-100"
+        isPressed ? ` brightness-95 ` : "brightness-100"
       }  h-[60px] ${lowerColor}  drop-shadow-neutral-400 drop-shadow-lg rounded-lg inset-shadow-sm inset-shadow-neutral-200 flex items-center justify-center`}
-      style={{ width }}
+      style={{ width, scale:isPressed?pressScale:"100%" }}
     >
       <div
         className={`h-[70%] drop-shadow-neutral-200 ${upperColor} drop-shadow-sm  rounded-sm ${isTextCentered && "flex items-center justify-center"}`}
